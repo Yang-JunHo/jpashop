@@ -8,12 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "MEMBER")
 @Getter @Setter
 public class Member {
 
     @Id
-    @GeneratedValue
-    @Column(name="member_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="MEMBER_ID")
     private Long id;
 
     private String name;

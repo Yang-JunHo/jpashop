@@ -12,7 +12,7 @@ import static jakarta.persistence.FetchType.LAZY;
 public class Delivery {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "delivery_id")
     private Long id;
 
